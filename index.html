@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Calorie Counter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="columnOne">
+        <div class="columnOne__btns">
+          <div class="btnsSort__buttons">
+            <div>
+              <p class="buttons__title">FILTER</p>
+            </div>
+            <div>
+              <button class="sortByTitle button-general">По названию</button>
+            </div>
+            <div>
+              <button class="sortByCalorie button-general">
+                По калорийности
+              </button>
+            </div>
+            <div>
+              <button class="delete__all button-general">Удалить всё</button>
+            </div>
+          </div>
+
+          <!-- <div class="columnOne__deleteBtn">
+            <div><button class="delete__all">Удалить всё</button></div>
+          </div> -->
+        </div>
+        <div class="columnOne__data"></div>
+      </div>
+      <div class="columnTwo">
+        <div class="container__form">
+          <form class="form">
+            <div class="form__info">
+              <div class="info__meal">
+                <label for="meal">Продукт</label>
+                <input
+                  class="form__input"
+                  name="meal"
+                  type="text"
+                  required
+                  placeholder="meal"
+                />
+              </div>
+              <div class="info__calorie">
+                <label for="calorie">Калории</label>
+                <input
+                  class="form__input"
+                  name="calorie"
+                  type="number"
+                  required
+                  placeholder="calories"
+                />
+              </div>
+            </div>
+
+            <div class="form__btns">
+              <button class="btn__submit button-general" type="submit">
+                Опубликовать
+              </button>
+              <button class="btn__reset button-general">Очистить</button>
+            </div>
+          </form>
+        </div>
+        <div class="container__limit">
+          <div class="limit">
+            <div class="limit__heading">
+              <div>
+                <p>Дневной лимит калорий <span class="limit-span"></span></p>
+              </div>
+              <div class="limit__icon">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+            </div>
+
+            <div class="limit__edit">
+              <input
+                class="limit__input"
+                name="meal"
+                type="number"
+                placeholder="limit"
+              />
+              <button class="save__limit button-general">Сохранить</button>
+              <!-- <button class="limit__edit-hide btn__reset button-general">
+                Скрыть
+              </button> -->
+            </div>
+          </div>
+          <div class="limit__data">
+            <p>Количество калорий за день <span class="amount"></span></p>
+          </div>
+          <div class="limit__warning">
+            <p class="warning">Не превышен</p>
+          </div>
+          <!-- <div class="item">
+            <div class="orange"></div>
+          </div> -->
+          <div class="cp__container">
+            <div class="circular-progress">
+              <div class="value-container">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

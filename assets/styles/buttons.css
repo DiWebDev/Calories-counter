@@ -1,0 +1,61 @@
+.button-general {
+   align-items: center;
+   appearance: button;
+   border-radius: 8px;
+   border-style: none;
+   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: flex;
+   flex-direction: row;
+   flex-shrink: 0;
+
+   font-size: 100%;
+   line-height: 1.15;
+   margin: 0;
+   padding: 10px 21px;
+   text-align: center;
+   text-transform: none;
+   transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out,
+      box-shadow 0.13s ease-in-out;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+}
+
+.sortByTitle {
+   background-color: #27a8f4;
+}
+
+.sortByCalorie {
+   background-color: #fcc214;
+}
+
+.delete__all {
+   background-color: #e91f63;
+}
+
+.button-general:hover {
+   opacity: 0.8;
+}
+
+.button-general:active {
+   transform: translateY(2px);
+}
+
+.btn__reset {
+   background-color: #9496c3;
+}
+
+.btn__submit {
+   background-color: #27a8f4;
+}
+
+.save__limit {
+   background-color: #099250;
+}
+
+.delete {
+   color: #98a3b3;
+}
